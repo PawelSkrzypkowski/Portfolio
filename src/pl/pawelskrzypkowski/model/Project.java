@@ -20,7 +20,10 @@ public class Project {
 		Scanner scanner = new Scanner(file, "UTF-8");
 		LinkedList<Project> list = new LinkedList<Project>();
 		while(scanner.hasNext()){
-			list.add(new Project(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextLine()));
+			String title = scanner.nextLine(), desc = scanner.nextLine(), img = scanner.nextLine(), link = scanner.nextLine();
+			if(link.equals("null"))
+				link ="#";
+			list.add(new Project(title, desc, img, link));
 		}
 		scanner.close();
 		return list;

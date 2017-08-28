@@ -1,9 +1,9 @@
-﻿Języki programowania: Java/JEE(zaawansowany), C/C++(dobry), PHP(dobry), C#(początkujący)
-​
-Narzędzia i biblioteki: JavaFX, JSP, JDBC, Hibernate, Eclipse, Visual Studio, GitHub
-​
-Bazy danych: Oracle, SAP Sybase, MySQL, MariaDB
-​
+﻿Języki programowania: <b>Java/JEE</b>, C/C++(podstawy)
+
+Biblioteki I technologie: JavaFX, Hibernate, Maven, SQL, JSP, JDBC
+
+Języki skryptowe: XML, HTML, CSS
+
 Systemy operacyjne: Windows, Linux(powłoki Shell i Bash)
-​
-Języki skryptowe: XML(także FXML), HTML, CSS
+
+Inne: MVC, Eclipse, IntelliJ IDEA, Visual Studio, GitHub, Azure

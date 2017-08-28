@@ -10,7 +10,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class Email {
-	private static final String myEmail = "pawlo133438@gmail.com";
+	private static final String myEmail = "pawel.skrzypkowski@outlook.com";
 	private Session mailSession;
 	private String replyEmail, subject, from, text;
 

@@ -2,82 +2,11 @@
 	font-family: 'din-next';
 	src: url('din-next-font.otf')
 }
-
-body {
-	margin-top: 50px;
-	width: 80%;
-	margin: 0 auto;
-	font-size: 15px;
-	color: #000000;
-	font-family: 'din-next';
-}
-
-#menu a {
-	padding-right: 30px;
-}
-
-#menu {
-	margin-top: 50px;
-}
-
 .line {
 	clear:both;
 	border-bottom: solid 1px black;
 	margin-top: 15px;
 }
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-a:hover {
-	color: grey;
-}
-
-#logo {
-	background-image: url('images/logo.jpg');
-	height: 403px;
-	width: 780px;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-
-#header {
-	font-size: 25px;
-	text-align: center;
-}
-.header2 {
-	font-size: 19px;
-	text-align: center;
-}
-
 .break {
 	margin-top: 50px;
-}
-
-#me {
-	width: 35%;
-	text-align: justify;
-	margin: 0 auto;
-}
-#me2{
-	text-align: justify;
-	margin: 0 auto;
-}
-
-#foot {
-	margin-top: 15px;
-	font-size: 10px;
-	text-align: center;
-}
-.column{
-	width: 30%;
-	float:left;
-	margin-right:10%;
-	margin-bottom:50px;
-	padding-left:10%;
-}
-#content {
-	width:100%;
 }

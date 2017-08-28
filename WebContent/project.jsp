@@ -3,10 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-	LinkedList<Project> list = Project.getProjectsList();
-	int halfSize = list.size() / 2;
-	if(list.size() % 2 == 1)
-		halfSize++;
+	LinkedList<Project> list = (LinkedList<Project>) request.getAttribute("projects");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -19,42 +16,62 @@
 <link rel="icon" href="icon.ico">
 <title>Portfolio programisty - Paweł Skrzypkowski | O mnie</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.min.css" rel="stylesheet">
 </head>
-<body>
-	<div id="menu">
-		<a href="index.jsp">HOME</a> <a href="MeServlet">O MNIE</a> <a
-			href="CvServlet">CV</a> <a href="ProjectServlet">PROJEKTY</a>
-	</div>
-	<div class="line"></div>
-	<div class="break"></div>
-	<div id="content">
-		<div class="column">
-			<div class="break"></div>
-			<div id="me2">
-				<%
-				for(int i=0; i<halfSize; i++){
-				%>
-					<div class="header2"><%= list.get(i).getTitle() %></div><br/>
-					<a href="<%= list.get(i).getSourcePath() %>" target="_blank"><img border="0" alt="<%= list.get(i).getTitle() %>" title="<%= list.get(i).getDescr() %>" src="<%= list.get(i).getImagePath() %>" style="height: 100%; width: 100%; object-fit: contain"></a>
-					<div class="break"></div>
-				<% } %>
-			</div>
-		</div>
-
-		<div class="column">
-			<div class="break"></div>
-			<div id="me2">
-				<%
-				for(int i=halfSize; i<list.size(); i++){
-				%>
-					<div class="header2"><%= list.get(i).getTitle() %></div><br/>
-					<div style="width:100%; height: width"><a href="<%= list.get(i).getSourcePath() %>" target="_blank"><img border="0" alt="<%= list.get(i).getTitle() %>" title="<%= list.get(i).getDescr() %>" src="<%= list.get(i).getImagePath() %>" style="max-height: 100%; max-width: 100%; vertical-align: middle"></a></div>
-					<div class="break"></div>
-				<% } %>
-			</div>
+<body style="margin: 0 auto;">
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav navbar-left">
+			<li class="dropdown"><a href="#" class="dropdown-toggle"
+				data-toggle="dropdown" role="button" aria-haspopup="true"
+				aria-expanded="false">Menu<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="index.jsp">HOME</a></li>
+					<li><a href="MeServlet">O MNIE</a></li>
+					<li><a href="CvServlet">CV</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="active"><a href="ProjectServlet">PROJEKTY</a></li>
+				</ul></li>
+		</ul>
+		<div class="navbar-header navbar-right">
+			<a class="navbar-brand" href="#"> PAWEŁ SKRZYPKOWSKI <i>PROGRAMISTA</i></a>
 		</div>
 	</div>
-	<div class="line"></div>
-	<div id="foot">© 2017 Portfolio - Paweł Skrzypkowski</div>
+	</nav>	
+	<div class="container" style="font-family: 'din-next';">
+				<%
+				for(int i=0; i<list.size(); i++){
+					if(i%2 == 0){
+				%>
+				<div class="row">
+					<div class="col-sm-0 col-md-1"></div>
+				<% } %>
+				<div class="col-sm-12 col-md-4">
+					<div class="thumbnail">
+				      <a href="<%= list.get(i).getSourcePath() %>" target="_blank"><img border="0" alt="<%= list.get(i).getTitle() %>" src="<%= list.get(i).getImagePath() %>" style="height: 100%; width: 100%; object-fit: contain"></a>
+				      <div class="caption">
+				        <h3><a href="<%= list.get(i).getSourcePath() %>" target="_blank"><%= list.get(i).getTitle() %></a></h3>
+				        <p><%= list.get(i).getDescr() %></p>
+				      </div>
+				    </div>
+				 <% 
+				 if(i%2 == 1){
+				 %>
+				 </div>
+				 <% } %>
+				 </div>
+				<% } %>
+	</div>
+	<footer class="navbar navbar-default navbar-static-bottom">
+		<div class="container">
+			<p class="navbar-text">
+				© 2017 Portfolio - Paweł Skrzypkowski</a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>

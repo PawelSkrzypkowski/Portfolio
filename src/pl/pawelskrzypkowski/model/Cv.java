@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.TreeMap;
+
 
 public class Cv {
 	private String name;
@@ -13,6 +15,9 @@ public class Cv {
 	private String birthDate;
 	private String country;
 	private String city;
+	private String aim;
+	private TreeMap<String, String> socialLinks = new TreeMap<String, String>();
+	private LinkedList<Project> projects = new LinkedList<Project>();
 	private LinkedList<String> education = new LinkedList<String>();
 	private LinkedList<String> experience = new LinkedList<String>();
 	private LinkedList<String> languages = new LinkedList<String>();
@@ -23,16 +28,27 @@ public class Cv {
 	public static Cv getInstance() throws IOException{
 		if(cv == null){
 			cv = new Cv();
+			cv.projects = Project.getProjectsList();
 			cv.loadHeader();
 			cv.loadEducation();
 			cv.loadExperience();
 			cv.loadLanguages();
 			cv.loadSkills();
 			cv.loadHobby();
+			cv.loadSocialLinks();
 		}
 		return cv;
 	}
-	
+	private void loadSocialLinks() throws FileNotFoundException{
+		ClassLoader classLoader = Cv.class.getClassLoader();
+		File file = new File(classLoader.getResource("socials.txt").getFile());
+		Scanner scanner = new Scanner(file, "UTF-8");
+		while(scanner.hasNextLine()){
+			String[] parts = scanner.nextLine().split("<>");
+			socialLinks.put(parts[0], parts[1]);
+		}
+		scanner.close();
+	}
 	private void loadHeader() throws IOException{
 		ClassLoader classLoader = Cv.class.getClassLoader();
 		File file = new File(classLoader.getResource("header.txt").getFile());
@@ -43,6 +59,7 @@ public class Cv {
 		birthDate = scanner.nextLine();
 		country = scanner.nextLine();
 		city = scanner.nextLine();
+		aim = scanner.nextLine();
 		scanner.close();
 	}
 	private void loadEducation() throws FileNotFoundException{
@@ -116,6 +133,18 @@ public class Cv {
 	}
 	public String getHobby() {
 		return hobby;
+	}
+
+	public LinkedList<Project> getProjects() {
+		return projects;
+	}
+
+	public String getAim() {
+		return aim;
+	}
+
+	public TreeMap<String, String> getSocialLinks() {
+		return socialLinks;
 	}
 	
 }
