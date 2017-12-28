@@ -1,11 +1,15 @@
-﻿goGym
+﻿CEPIK - Policja
+Aplikacja pisana zespołowo, korzystając z metodyki SCRUM. Odwzorowuje moduł systemu CEPIK dla policji. Napisana przy użyciu frameworka Spring, Hibernate, MySQL, elementy frontendowe: Bootstrap, HTML, CSS. Rola: Developer
+images/projects/cepik.png
+https://goo.gl/TVyrMz;mwsi
+goGym
 Aplikacja napisana w języku Java w oparciu o bibliotekę JavaFX służąca do prowadzenia treningów w czasie rzeczywistym. Aplikacja umożliwia założenie konta, stworzenie oraz przeprowadzenie swojego planu treningowego. Ponadto możliwe jest śledzenie swoich postępów w poszczególnych ćwiczeniach, swoim ciele, a także w przeciągu miesiąca i roku. Dodatkową funkcjonalnością są kalkulatory obliczające podstawowe wskaźniki.<br/><b>Użyte technologie:</b> Java, JavaFX
 images/projects/goGym.png
 https://goo.gl/zU52oi
 Portfolio JEE
 Moje własne portfolio, na którym właśnie przebywasz. Zostało wykonane przy pomocy HTML, CSS oraz podstawowych narzędzi Java EE takich jak servlety, filtry, strony jsp oraz pliki konfiguracyjne. Jest na tyle funkcjonalne, że wszelkie zmienialne dane takie jak: projekty, opis(o mnie), cv znajduja sie w plikach tekstowych i sa bardzo latwo modyfikowalne. Dodatkowo została zaimplementowana usługa wysyłania e-maili przy wykorzystaniu biblioteki java.mail.<br/><b>Użyte technologie:</b> JavaEE, HTML, CSS, Bootstrap
 images/projects/portfolio.png
-https://goo.gl/Pqb5yW
+https://goo.gl/Pqb5yW;/
 Baza danych sklepu rowerowego
 Projekt polegał na stworzeniu całego systemu bazodanowego dla sklepu rowerowego. Zaprojektowana baza danych posiada widoki(views), procedury(dodawanie klienta, generator transakcji, itp), sekwencje i joby. Stworzony system został zaprojektowany dla bazy Oracle oraz SAP Sybase.<br/><b>Użyte technologie i narzędzia:</b> bazy danych Oracle oraz SAP Sybase, Oracle SQL Developer, JasperReports
 images/projects/baza.png

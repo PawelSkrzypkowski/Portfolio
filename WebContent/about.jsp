@@ -40,6 +40,7 @@
 					<li><a href="CvServlet">CV</a></li>
 					<li role="separator" class="divider"></li>
 					<li><a href="ProjectServlet">PROJEKTY</a></li>
+					<li><a href="mwsi">CEPIK</a></li>
 				</ul></li>
 		</ul>
 		<div class="navbar-header navbar-right">
@@ -47,7 +48,7 @@
 		</div>
 	</div>
 	</nav>
-	<div class="container" style="font-family: 'din-next';">
+	<div class="container" style="font-family: 'din-next'; margin-bottom:50px;">
 		<div class="row">
 		<div class="col-sm-0 col-md-1"></div>
 			<div class="col-sm-12 col-md-4">
@@ -94,7 +95,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class="navbar navbar-default navbar-static-bottom">
+	<footer class="navbar navbar-default navbar-fixed-bottom">
 	<div class="container">
 		<p class="navbar-text">
 			© 2017 Portfolio - Paweł Skrzypkowski</a>

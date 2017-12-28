@@ -35,6 +35,7 @@
 					<li><a href="CvServlet">CV</a></li>
 					<li role="separator" class="divider"></li>
 					<li class="active"><a href="ProjectServlet">PROJEKTY</a></li>
+					<li><a href="mwsi">CEPIK</a></li>
 				</ul></li>
 		</ul>
 		<div class="navbar-header navbar-right">
@@ -42,8 +43,9 @@
 		</div>
 	</div>
 	</nav>	
-	<div class="container" style="font-family: 'din-next';">
+	<div class="container" style="font-family: 'din-next'; margin-bottom:50px;">
 				<%
+				String link, git;
 				for(int i=0; i<list.size(); i++){
 					if(i%2 == 0){
 				%>
@@ -52,10 +54,23 @@
 				<% } %>
 				<div class="col-sm-12 col-md-4">
 					<div class="thumbnail">
-				      <a href="<%= list.get(i).getSourcePath() %>" target="_blank"><img border="0" alt="<%= list.get(i).getTitle() %>" src="<%= list.get(i).getImagePath() %>" style="height: 100%; width: 100%; object-fit: contain"></a>
+					<%
+					if(list.get(i).getSourcePath().length == 1) {
+						git = list.get(i).getSourcePath()[0];
+						link = list.get(i).getSourcePath()[0];
+					} else {
+						git = list.get(i).getSourcePath()[0];
+						link = list.get(i).getSourcePath()[1];
+					}%>
+				      <a href="<%= link %>" target="_blank"><img border="0" alt="<%= list.get(i).getTitle() %>" src="<%= list.get(i).getImagePath() %>" style="height: 100%; width: 100%; object-fit: contain"></a>
 				      <div class="caption">
-				        <h3><a href="<%= list.get(i).getSourcePath() %>" target="_blank"><%= list.get(i).getTitle() %></a></h3>
+				        <h3><a href="<%= link %>" target="_blank"><%= list.get(i).getTitle() %></a></h3>
 				        <p><%= list.get(i).getDescr() %></p>
+				        <%
+				        	if(list.get(i).getSourcePath().length > 1){
+				        %>
+				        	<p><a href="<%= git %>" target="_blank">GitHub</a></p>
+				        <%	} %>
 				      </div>
 				    </div>
 				 <% 
@@ -66,7 +81,7 @@
 				 </div>
 				<% } %>
 	</div>
-	<footer class="navbar navbar-default navbar-static-bottom">
+	<footer class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container">
 			<p class="navbar-text">
 				© 2017 Portfolio - Paweł Skrzypkowski</a>

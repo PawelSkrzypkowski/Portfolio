@@ -37,6 +37,7 @@
 					<li class="active"><a href="CvServlet">CV</a></li>
 					<li role="separator" class="divider"></li>
 					<li><a href="ProjectServlet">PROJEKTY</a></li>
+					<li><a href="mwsi">CEPIK</a></li>
 				</ul></li>
 		</ul>
 		<div class="navbar-header navbar-right">
@@ -44,7 +45,7 @@
 		</div>
 	</div>
 	</nav>
-	<div class="container" style="font-family: 'din-next';">
+	<div class="container" style="font-family: 'din-next'; margin-bottom:50px;">
 		<div class="row">
 		<div class="col-sm-0 col-md-1"></div>
 			<div class="col-sm-12 col-md-4">
@@ -59,25 +60,25 @@
 						<%= cv.getCity() %><br/>
 						<p><%= cv.getAim() %></p>
 						<div class="break"></div>
+						<h4><u>Doświadczenie</u></h4>
+						<% for(String s : cv.getExperience()){ %>
+						<%= s %><br/>
+						<% } %>
+						<div class="break"></div>
 						<h4><u>Umiejętności</u></h4>
 						<% for(String s : cv.getSkills()){ %>
 						<%= s %><br/>
 						<% } %>
-					<div class="break"></div>
-					<h4><u>Wykształcenie</u></h4>
-					<% for(String s : cv.getEducation()){ %>
+						<div class="break"></div>
+						<h4><u>Wykształcenie</u></h4>
+						<% for(String s : cv.getEducation()){ %>
+							<%= s %><br/>
+						<% } %>
+						<div class="break"></div>
+						<h4><u>Znajomość języków obcych</u></h4>
+						<% for(String s : cv.getLanguages()){ %>
 						<%= s %><br/>
-					<% } %>
-					<div class="break"></div>
-					<h4><u>Doświadczenie</u></h4>
-					<% for(String s : cv.getExperience()){ %>
-					<%= s %><br/>
-					<% } %>
-					<div class="break"></div>
-					<h4><u>Znajomość języków obcych</u></h4>
-					<% for(String s : cv.getLanguages()){ %>
-					<%= s %><br/>
-					<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -89,9 +90,14 @@
 						<% for(Project p : cv.getProjects()){ %>
 							<br/><b><%= p.getTitle() %>: </b>
 							<%= p.getDescr() %><br/>
-							<%if(!p.getSourcePath().equals("#")){ %>
-							Link: <a href="<%= p.getSourcePath() %>" target="_blank">GitHub</a><br/>
-						<% } }%>
+							<%	int k=0;
+							for(String link : p.getSourcePath()){ %>
+							<%if(!link.equals("#") && k==0){ %>
+							Link: <a href="<%= link %>" target="_blank">GitHub</a><br/>
+							<%	} %>
+							<%if(!link.equals("#") && k!=0){ %>
+							Link: <a href="<%= link %>" target="_blank">link</a><br/>
+						<%	} k++; } }%>
 						<h4><u>Zainteresowania</u></h4>
 						<p><%= cv.getHobby() %></p>
 						<% for(Map.Entry<String, String> entry : cv.getSocialLinks().entrySet()){ %>
@@ -105,7 +111,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class="navbar navbar-default navbar-static-bottom">
+	<footer class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container">
 			<p class="navbar-text">
 				© 2017 Portfolio - Paweł Skrzypkowski</a>
