@@ -1,4 +1,8 @@
-﻿CEPIK - Policja
+﻿goGym - online
+Rozwinięcie poprzedniej aplikacji goGym. Dodane podłączenie do bazy danych + uporządkowanie kodu. Teraz aplikacja jest przenośna i pozwala na utworzenie dowolnej ilości kont. W celu poprawy czytelności kodu encje oraz kontrolery zostały rozdzielone od funkcji utilsowych.<br/><b>Użyte dodatkowe technologie:</b> Hibernate, Lombok, Maven
+images/projects/goGymOnline.png
+https://goo.gl/3uhcfL
+CEPIK - Policja
 Aplikacja pisana zespołowo, korzystając z metodyki SCRUM. Odwzorowuje moduł systemu CEPIK dla policji. Napisana przy użyciu frameworka Spring, Hibernate, MySQL, elementy frontendowe: Bootstrap, HTML, CSS. Rola: Developer
 images/projects/cepik.png
 https://goo.gl/TVyrMz;mwsi
