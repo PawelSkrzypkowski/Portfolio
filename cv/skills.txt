@@ -1,8 +1,8 @@
 ﻿Języki programowania: <b>Java/JEE</b>, C/C++(podstawy)
 
-Biblioteki I technologie: JavaFX, Hibernate, Maven, SQL, JSP, JDBC
+Biblioteki I technologie: <b>Spring</b>, JavaFX, Hibernate, Maven, SQL, <b>jQuery</b>, Bootstrap, AngularJS, JSP, JDBC
 
-Języki skryptowe: XML, HTML, CSS
+Języki skryptowe: JavaScript, XML, HTML, CSS
 
 Systemy operacyjne: Windows, Linux(powłoki Shell i Bash)
 
