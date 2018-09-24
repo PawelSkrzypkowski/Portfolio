@@ -38,6 +38,7 @@
 					<li role="separator" class="divider"></li>
 					<li><a href="ProjectServlet">PROJEKTY</a></li>
 					<li><a href="mwsi">CEPIK</a></li>
+					<li><a href="szpital">System rejestracji w szpitalu</a></li>
 				</ul></li>
 		</ul>
 		<div class="navbar-header navbar-right">
@@ -79,6 +80,15 @@
 						<% for(String s : cv.getLanguages()){ %>
 						<%= s %><br/>
 						<% } %>
+						<div class="break"></div>
+						<h4><u>Zainteresowania</u></h4>
+						<p><%= cv.getHobby() %></p>
+						<% for(Map.Entry<String, String> entry : cv.getSocialLinks().entrySet()){ %>
+						<p><b><%=entry.getKey() %> </b><a href="<%= entry.getValue() %>" target="_blank">link</a></p>
+						<% } %>
+						<p><a target="_blank" href="cv-pawel-skrzypkowski.pdf" style="background-color: #000000; color: #ffffff; border: 7px solid #000000;">Pobierz CV</a>
+						<a target="_blank" href="cv-pawel-skrzypkowski-english.pdf" style="background-color: #000000; color: #ffffff; border: 7px solid #000000; margin-left: 20px;">Download CV</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -98,14 +108,6 @@
 							<%if(!link.equals("#") && k!=0){ %>
 							Link: <a href="<%= link %>" target="_blank">link</a><br/>
 						<%	} k++; } }%>
-						<h4><u>Zainteresowania</u></h4>
-						<p><%= cv.getHobby() %></p>
-						<% for(Map.Entry<String, String> entry : cv.getSocialLinks().entrySet()){ %>
-						<p><b><%=entry.getKey() %> </b><a href="<%= entry.getValue() %>" target="_blank">link</a></p>
-						<% } %>
-						<p><a target="_blank" href="cv-pawel-skrzypkowski.pdf" style="background-color: #000000; color: #ffffff; border: 7px solid #000000;">Pobierz CV</a>
-						<a target="_blank" href="cv-pawel-skrzypkowski-english.pdf" style="background-color: #000000; color: #ffffff; border: 7px solid #000000; margin-left: 20px;">Download CV</a>
-						</p>
 					</div>
 				</div>
 			</div>

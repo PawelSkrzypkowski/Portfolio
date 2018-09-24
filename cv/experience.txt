@@ -2,7 +2,4 @@
 Programowanie w języku Java oraz przy użyciu technologii frontendowych. Testowanie apliakcji.
 
 09/2017 - obecnie: Java Spring Developer - WAT
-Praca przy projekcie zleconym Wojskowej Akademii Technicznej. Realizacja zagadnień front i backendowych, głównie z użyciem technologii Spring.
-
-09/2012 - 04/2015: Wolontariat - Playarena
-Nabyte umiejętności: planowanie zadań, dysponowanie czasem, zarządzanie ludźmi oraz rozdzielanie obowiązków.
+Praca przy projekcie zleconym Wojskowej Akademii Technicznej. Realizacja zagadnień front i backendowych, głównie z użyciem technologii Spring. Tworzenie do wykonanej aplikacji webowej aplikacji mobilnej dla pacjentów.

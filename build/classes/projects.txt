@@ -1,24 +1,40 @@
-﻿goGym - online
-Rozwinięcie poprzedniej aplikacji goGym. Dodane podłączenie do bazy danych + uporządkowanie kodu. Teraz aplikacja jest przenośna i pozwala na utworzenie dowolnej ilości kont. W celu poprawy czytelności kodu encje oraz kontrolery zostały rozdzielone od funkcji utilsowych.<br/><b>Użyte dodatkowe technologie:</b> Hibernate, Lombok, Maven
+﻿System rejestracji pacjentów w szpitalu
+Projekt akademicki: System rejestracji pacjentów w szpitalu. Aplikacja internetowa przeznaczona do zbierania danych o wizytach i harmonogramach lekarzy. W zespole było 3 programistów, w tym ja, 2 analityków, którzy przygotowali dokumentację i 1 tester.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, MySQL, Bootstrap, HTML, CSS, jQuery
+images/projects/szpital.png
+https://goo.gl/xW3TJG
+Wojskowa Akademia Techniczna, Java Android Developer
+Projekt komercyjny: Aplikacja mobilna dla pacjentów z wcześniej utworzonego systemu. Aplikacja dla systemu Android, na specjalnie dostosowanym urządzeniu (dodatkowe funkcje do pomiaru wskaźników medycznych (echo serca, itp.) Przypomina wizyty pacjentów, wysyła pomiary wykonywane w locie w celu poinformowania lekarzy.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Android SDK, Maven
+images/projects/amulet.png
+https://www.wim.mil.pl/
+Wojskowa Akademia Techniczna, Java Developer
+Projekt komercyjny: Aplikacja internetowa wspomagająca lekarzy w leczeniu chorób serca. Ułatwienie gromadzenia wizyt pacjentów, śledzenie zmian w zdrowiu i, w razie potrzeby, alarmowanie o zagrożeniu życia. Wartość projektu ok. 13 mln zł.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, JavaScript, jQuery, Bootstrap, Postgres, Maven
+images/projects/amulet.png
+https://www.wim.mil.pl/
+RelayOnIt, Java Developer
+Projekt komercyjny: Aplikacja internetowa do zarządzania cudzoziemcami w Polsce. Wydawanie karnetów, pobytów czasowych, rozpatrywanie wniosków o ochronę, świadczenia, kontakt z innymi urzędami (np. Straż graniczna).<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, JavaScript, jQuery, Bootstrap, DB2, Maven, PDFBox, JEE
+images/projects/pobyt.png
+null
+goGym - online
+Projekt akademicki: Rozwinięcie poprzedniej aplikacji goGym. Dodane podłączenie do bazy danych + uporządkowanie kodu. Teraz aplikacja jest przenośna i pozwala na utworzenie dowolnej ilości kont. W celu poprawy czytelności kodu encje oraz kontrolery zostały rozdzielone od funkcji utilsowych.<br/><b>Użyte dodatkowe technologie:</b> Hibernate, Lombok, Maven
 images/projects/goGymOnline.png
 https://goo.gl/3uhcfL
 CEPIK - Policja
-Aplikacja pisana zespołowo, korzystając z metodyki SCRUM. Odwzorowuje moduł systemu CEPIK dla policji. Napisana przy użyciu frameworka Spring, Hibernate, MySQL, elementy frontendowe: Bootstrap, HTML, CSS. Rola: Developer
+Projekt akademicki: Aplikacja pisana zespołowo, korzystając z metodyki SCRUM. Odwzorowuje moduł systemu CEPIK dla policji. Napisana przy użyciu frameworka Spring, Hibernate, MySQL, elementy frontendowe: Bootstrap, HTML, CSS. Rola: Developer
 images/projects/cepik.png
 https://goo.gl/TVyrMz;mwsi
 goGym
-Aplikacja napisana w języku Java w oparciu o bibliotekę JavaFX służąca do prowadzenia treningów w czasie rzeczywistym. Aplikacja umożliwia założenie konta, stworzenie oraz przeprowadzenie swojego planu treningowego. Ponadto możliwe jest śledzenie swoich postępów w poszczególnych ćwiczeniach, swoim ciele, a także w przeciągu miesiąca i roku. Dodatkową funkcjonalnością są kalkulatory obliczające podstawowe wskaźniki.<br/><b>Użyte technologie:</b> Java, JavaFX
+Projekt akademicki: Aplikacja napisana w języku Java w oparciu o bibliotekę JavaFX służąca do prowadzenia treningów w czasie rzeczywistym. Aplikacja umożliwia założenie konta, stworzenie oraz przeprowadzenie swojego planu treningowego. Ponadto możliwe jest śledzenie swoich postępów w poszczególnych ćwiczeniach, swoim ciele, a także w przeciągu miesiąca i roku. Dodatkową funkcjonalnością są kalkulatory obliczające podstawowe wskaźniki.<br/><b>Użyte technologie:</b> Java, JavaFX
 images/projects/goGym.png
 https://goo.gl/zU52oi
 Portfolio JEE
-Moje własne portfolio, na którym właśnie przebywasz. Zostało wykonane przy pomocy HTML, CSS oraz podstawowych narzędzi Java EE takich jak servlety, filtry, strony jsp oraz pliki konfiguracyjne. Jest na tyle funkcjonalne, że wszelkie zmienialne dane takie jak: projekty, opis(o mnie), cv znajduja sie w plikach tekstowych i sa bardzo latwo modyfikowalne. Dodatkowo została zaimplementowana usługa wysyłania e-maili przy wykorzystaniu biblioteki java.mail.<br/><b>Użyte technologie:</b> JavaEE, HTML, CSS, Bootstrap
+Projekt własny: Moje własne portfolio, na którym właśnie przebywasz. Zostało wykonane przy pomocy HTML, CSS oraz podstawowych narzędzi Java EE takich jak servlety, filtry, strony jsp oraz pliki konfiguracyjne. Jest na tyle funkcjonalne, że wszelkie zmienialne dane takie jak: projekty, opis(o mnie), cv znajduja sie w plikach tekstowych i sa bardzo latwo modyfikowalne. Dodatkowo została zaimplementowana usługa wysyłania e-maili przy wykorzystaniu biblioteki java.mail.<br/><b>Użyte technologie:</b> JavaEE, HTML, CSS, Bootstrap
 images/projects/portfolio.png
 https://goo.gl/Pqb5yW;/
 Baza danych sklepu rowerowego
-Projekt polegał na stworzeniu całego systemu bazodanowego dla sklepu rowerowego. Zaprojektowana baza danych posiada widoki(views), procedury(dodawanie klienta, generator transakcji, itp), sekwencje i joby. Stworzony system został zaprojektowany dla bazy Oracle oraz SAP Sybase.<br/><b>Użyte technologie i narzędzia:</b> bazy danych Oracle oraz SAP Sybase, Oracle SQL Developer, JasperReports
+Projekt akademicki: Projekt polegał na stworzeniu całego systemu bazodanowego dla sklepu rowerowego. Zaprojektowana baza danych posiada widoki(views), procedury(dodawanie klienta, generator transakcji, itp), sekwencje i joby. Stworzony system został zaprojektowany dla bazy Oracle oraz SAP Sybase.<br/><b>Użyte technologie i narzędzia:</b> bazy danych Oracle oraz SAP Sybase, Oracle SQL Developer, JasperReports
 images/projects/baza.png
 https://goo.gl/c8B1PT
 Gra przeglądarkowa
-Gra, którą stworzyłem w gimnazjum, polega na prowadzeniu kariery siatkarza. Była oparta na języku PHP oraz bazie MySQL. Gra została sprzedana i nie mam dostępu do kodu.<br/><b>Użyte technologie:</b> PHP, MySQL
+Projekt własny: Gra, którą stworzyłem w gimnazjum, polega na prowadzeniu kariery siatkarza. Była oparta na języku PHP oraz bazie MySQL. Gra została sprzedana i nie mam dostępu do kodu.<br/><b>Użyte technologie:</b> PHP, MySQL
 images/projects/vt.png
 null

@@ -33,6 +33,7 @@
 					<li role="separator" class="divider"></li>
 					<li><a href="ProjectServlet">PROJEKTY</a></li>
 					<li><a href="mwsi">CEPIK</a></li>
+					<li><a href="szpital">System rejestracji w szpitalu</a></li>
 				</ul></li>
 		</ul>
 		<div class="navbar-header navbar-right">
