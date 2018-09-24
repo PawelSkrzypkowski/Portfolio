@@ -1,19 +1,23 @@
 ﻿System rejestracji pacjentów w szpitalu
-Projekt akademicki: System rejestracji pacjentów w szpitalu. Aplikacja internetowa przeznaczona do zbierania danych o wizytach i harmonogramach lekarzy. W zespole było 3 programistów, w tym ja, 2 analityków, którzy przygotowali dokumentację i 1 tester.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, MySQL, Bootstrap, HTML, CSS, jQuery
+Projekt akademicki: Aplikacja internetowa przeznaczona do zbierania danych o wizytach i harmonogramach lekarzy. W zespole było 3 programistów, w tym ja, 2 analityków, którzy przygotowali dokumentację i 1 tester.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, MySQL, Bootstrap, HTML, CSS, jQuery
 images/projects/szpital.png
-https://goo.gl/xW3TJG
+https://goo.gl/xW3TJG;szpital
 Wojskowa Akademia Techniczna, Java Android Developer
 Projekt komercyjny: Aplikacja mobilna dla pacjentów z wcześniej utworzonego systemu. Aplikacja dla systemu Android, na specjalnie dostosowanym urządzeniu (dodatkowe funkcje do pomiaru wskaźników medycznych (echo serca, itp.) Przypomina wizyty pacjentów, wysyła pomiary wykonywane w locie w celu poinformowania lekarzy.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Android SDK, Maven
 images/projects/amulet.png
-https://www.wim.mil.pl/
+#;https://www.wim.mil.pl/
 Wojskowa Akademia Techniczna, Java Developer
 Projekt komercyjny: Aplikacja internetowa wspomagająca lekarzy w leczeniu chorób serca. Ułatwienie gromadzenia wizyt pacjentów, śledzenie zmian w zdrowiu i, w razie potrzeby, alarmowanie o zagrożeniu życia. Wartość projektu ok. 13 mln zł.<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, JavaScript, jQuery, Bootstrap, Postgres, Maven
 images/projects/amulet.png
-https://www.wim.mil.pl/
+#;https://www.wim.mil.pl/
 RelayOnIt, Java Developer
 Projekt komercyjny: Aplikacja internetowa do zarządzania cudzoziemcami w Polsce. Wydawanie karnetów, pobytów czasowych, rozpatrywanie wniosków o ochronę, świadczenia, kontakt z innymi urzędami (np. Straż graniczna).<br/><b>Użyte technologie i narzędzia:</b> Java 8, Spring, Hibernate, JavaScript, jQuery, Bootstrap, DB2, Maven, PDFBox, JEE
 images/projects/pobyt.png
-null
+#
+RelayOnIt, Java Developer
+Projekt komercyjny: Aplikacja do użytku firmowego. Budowanie stron poprzez wizualny edytor. Wykorzystywane technologie przy budowie to Bootstrap i Dojo.<br/><b>Użyte technologie i narzędzia:</b> JavaScript, jQuery, Bootstrap, Dojo
+images/projects/bootstrap.png
+#
 goGym - online
 Projekt akademicki: Rozwinięcie poprzedniej aplikacji goGym. Dodane podłączenie do bazy danych + uporządkowanie kodu. Teraz aplikacja jest przenośna i pozwala na utworzenie dowolnej ilości kont. W celu poprawy czytelności kodu encje oraz kontrolery zostały rozdzielone od funkcji utilsowych.<br/><b>Użyte dodatkowe technologie:</b> Hibernate, Lombok, Maven
 images/projects/goGymOnline.png
@@ -37,4 +41,4 @@ https://goo.gl/c8B1PT
 Gra przeglądarkowa
 Projekt własny: Gra, którą stworzyłem w gimnazjum, polega na prowadzeniu kariery siatkarza. Była oparta na języku PHP oraz bazie MySQL. Gra została sprzedana i nie mam dostępu do kodu.<br/><b>Użyte technologie:</b> PHP, MySQL
 images/projects/vt.png
-null
+#
